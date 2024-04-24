@@ -1,7 +1,9 @@
 
+import RaccoonCard from './RaccoonCard'
+
 function RaccoonsContainer({ raccoonsArr, audioOn }) {
 
-    const mappedRaccoons = raccoonsArr.map(<RaccoonCard raccoon={raccoon} audioOn={audioOn} />)
+    const mappedRaccoons = raccoonsArr.map(raccoon => <RaccoonCard raccoon={raccoon} audioOn={audioOn} />)
 
     return (
         <div>

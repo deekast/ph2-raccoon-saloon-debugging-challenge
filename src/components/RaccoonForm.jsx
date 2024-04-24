@@ -23,7 +23,7 @@ function RaccoonForm({ setRaccoonsArr, raccoonsArr }) {
 
         const bodyObj = {name, location, img_url}
 
-        fetch("http://localhost:5555", {
+        fetch("http://localhost:5555/raccoon", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

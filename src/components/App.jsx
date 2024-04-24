@@ -7,15 +7,15 @@ function App() {
   const [ lightMode, setLightMode ] = useState( false )
   const [ audioOn, setAudioOn ] = useState( true )
 
-  const [ raccoonsArr, setRaccoonsArr ] = useState( '' )
+  const [ raccoonsArr, setRaccoonsArr ] = useState( [] )
 
   function handleLightModeClick(event) {
     setLightMode( lightMode )
   }
 
   useEffect( () => {
-
-    fetch("http://localhost:5555/racons")
+    console.log("im being triggered!")
+    fetch("http://localhost:5555/raccoons")
     .then( res => {
       if (res.ok) {
         return res.json()

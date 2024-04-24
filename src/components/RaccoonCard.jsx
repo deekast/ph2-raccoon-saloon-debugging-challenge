@@ -1,7 +1,7 @@
 import profilePic from "../assets/raccoon-icon.jpg"
 import chitter from "../assets/chitter.mp3"
 
-function RaccoonCard({ audioOn }) {
+function RaccoonCard({ raccoon, audioOn }) {
 
     function handlePlayAudio() {
         if (audioOn) {
